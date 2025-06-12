@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>click it</title>
-  <style>
-    #box {
-      display: none;
-      background: #222;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      position: fixed;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 0 10px black;
-    }
-  </style>
+  <title>Click It</title>
 </head>
 <body>
 
-<button onclick="showCustom()">Click Me</button>
+<table width="100%" height="200">
+  <tr>
+    <td align="center" valign="middle">
+      <button onclick="showCustom()" style="font-size:30px; padding:20px 40px;">Click Me</button>
+    </td>
+  </tr>
+</table>
 
-<div id="box">Rahim ekta madarchod</div>
+<div id="box" style="display:none; background:#222; color:white; padding:20px; border-radius:10px; width:300px; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%); box-shadow:0 0 10px black; text-align:center;">
+  Rahim ekta madarchod
+</div>
 
 <script>
   function showCustom() {
